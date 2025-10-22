@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Nova Digital — студия дизайна</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- ШАПКА -->
+<header>
+    <div class="container">
+        <div class="logo">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="#00ffc6">
+                <path d="M12 2L2 7v10l10 5 10-5V7zM4 8.2l8 4 8-4v7.6l-8 4-8-4z"/>
+            </svg>
+            <span>Nova Digital</span>
+        </div>
+        <nav>
+            <a href="#">Главная</a>
+            <a href="#">Проекты</a>
+            <a href="#">Команда</a>
+            <a href="#">Контакты</a>
+        </nav>
+    </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="container">
+        <h1>Современный дизайн и разработка</h1>
+        <p>Создаём сайты, интерфейсы и бренды с точностью до пикселя.
+            Каждый проект — это эстетика, стабильность и внимание к деталям.</p>
+        <button>Заказать проект</button>
+    </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services">
+    <div class="container">
+        <div class="title-block">
+            <h2>Наши услуги</h2>
+            <div class="underline"></div>
+        </div>
+
+        <div class="cards">
+            <div class="card">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="#00ffc6">
+                    <path d="M12 3L1.5 9l10.5 6 10.5-6L12 3zM3 11l9 5 9-5v8H3v-8z"/>
+                </svg>
+                <h3>Веб-разработка</h3>
+                <p>Чистый код, высокая производительность и визуальная стабильность на всех экранах.</p>
+            </div>
+
+            <div class="card">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="#00ffc6">
+                    <path d="M12 2L2 7v10l10 5 10-5V7L12 2zM4 8l8 4 8-4v8l-8 4-8-4V8z"/>
+                </svg>
+                <h3>UI/UX дизайн</h3>
+                <p>Эргономика, баланс и эмоция — три кита, на которых держится каждый наш интерфейс.</p>
+            </div>
+
+            <div class="card">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="#00ffc6">
+                    <path d="M3 3h18v18H3zM5 5v14h14V5z"/>
+                </svg>
+                <h3>Брендинг</h3>
+                <p>Разрабатываем фирменный стиль, который отражает ценности и индивидуальность бизнеса.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about">
+    <div class="container">
+        <div class="text">
+            <h2>О студии</h2>
+            <p>Nova Digital — команда дизайнеров и разработчиков, объединённых страстью к идеальной визуалике.
+                Мы не делаем шаблонные решения. Мы создаём цифровые продукты, которые вызывают доверие и вдохновение.</p>
+        </div>
+        <div class="image">
+            <svg width="400" height="280" viewBox="0 0 400 280">
+                <rect width="400" height="280" fill="#111"/>
+                <circle cx="200" cy="140" r="80" fill="#00ffc6" opacity="0.1"/>
+                <text x="200" y="150" font-size="24" fill="#00ffc6" text-anchor="middle" font-family="Arial">NOVA</text>
+            </svg>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="container">
+        <p>© 2025 Nova Digital</p>
+        <p>hello@novadigital.ru</p>
+    </div>
+</footer>
+</body>
+</html>

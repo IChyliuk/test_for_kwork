@@ -1,0 +1,213 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #0d0d0d;
+    color: #e4e4e4;
+    font-family: "Inter", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 1440px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* ===== ШАПКА ===== */
+header {
+    width: 100vw;
+    height: 90px;
+    background-color: #141414;
+    border-bottom: 1px solid #1f1f1f;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo span {
+    font-size: 20px;
+    font-weight: 600;
+    color: #00ffc6;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+nav a {
+    color: #d0d0d0;
+    text-decoration: none;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    transition: color 0.2s ease;
+}
+
+nav a:hover {
+    color: #00ffc6;
+}
+
+.hero {
+    width: 100vw;
+    height: 480px;
+    background-color: #101010;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero .container {
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 38px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #bfbfbf;
+    width: 720px;
+    margin: 0 auto 40px auto;
+}
+
+.hero button {
+    background-color: #00ffc6;
+    color: #0d0d0d;
+    border: none;
+    padding: 14px 46px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.hero button:hover {
+    background-color: #00d9a7;
+}
+
+.services {
+    width: 100vw;
+    background-color: #141414;
+    padding: 100px 0;
+}
+
+.title-block {
+    text-align: center;
+}
+
+.title-block h2 {
+    font-size: 26px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.underline {
+    width: 80px;
+    height: 3px;
+    background-color: #00ffc6;
+    margin: 16px auto 60px auto;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    width: 420px;
+    background-color: #1a1a1a;
+    border: 1px solid #222;
+    padding: 50px 30px;
+    text-align: center;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    border-color: #00ffc6;
+}
+
+.card h3 {
+    color: #00ffc6;
+    font-size: 18px;
+    margin-top: 24px;
+}
+
+.card p {
+    color: #bfbfbf;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.about {
+    width: 100vw;
+    background-color: #101010;
+    padding: 120px 0;
+}
+
+.about .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about .text {
+    width: 620px;
+}
+
+.about .text h2 {
+    font-size: 26px;
+    color: #00ffc6;
+    margin-bottom: 20px;
+}
+
+.about .text p {
+    font-size: 16px;
+    color: #c8c8c8;
+    line-height: 28px;
+}
+
+.about .image {
+    width: 400px;
+    height: 280px;
+    background-color: #111;
+    border: 1px solid #1f1f1f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    width: 100vw;
+    height: 120px;
+    background-color: #0a0a0a;
+    border-top: 1px solid #1a1a1a;
+    text-align: center;
+    padding-top: 40px;
+    color: #777;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+footer p {
+    margin: 0;
+}
