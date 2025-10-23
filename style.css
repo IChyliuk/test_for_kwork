@@ -1,213 +1,198 @@
-body {
+/* === СБРОС И БАЗА === */
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: #0d0d0d;
-    color: #e4e4e4;
-    font-family: "Inter", Arial, sans-serif;
-    font-size: 16px;
-    line-height: 26px;
-    width: 100vw;
-    overflow-x: hidden;
 }
 
-.container {
+html, body {
+    width: 100%;
+    height: 100%;
+    background: #0d0d0d;
+    color: #e4e4e4;
+    font-family: "Inter", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow: hidden;
+}
+
+/* === СТАТИЧНЫЙ КОНТЕЙНЕР === */
+#app {
+    position: relative;
     width: 1440px;
+    height: 800px;
+    margin: 0 auto;
+    background: #0d0d0d;
+    zoom: calc(1 / var(--browser-zoom, 1));
+    /* ФИКС СТАБИЛЬНОСТИ БЕЗ TRANSFORM */
+    will-change: transform;
+}
+
+/* === КОНТЕЙНЕР === */
+.container {
+    width: 1200px;
     margin: 0 auto;
     position: relative;
+    padding: 0 20px;
 }
 
 /* ===== ШАПКА ===== */
 header {
-    width: 100vw;
-    height: 90px;
+    width: 100%;
+    height: 70px;
     background-color: #141414;
     border-bottom: 1px solid #1f1f1f;
+    /* ФИКС БЕЗ TRANSFORM */
+    will-change: transform;
 }
 
 header .container {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    height: 90px;
+    height: 100%;
 }
 
 .logo {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 12px;
+}
+
+.logo-icon {
+    width: 64px;
+    height: 64px;
+    flex-shrink: 0;
+    will-change: transform;
 }
 
 .logo span {
     font-size: 20px;
     font-weight: 600;
     color: #00ffc6;
+    /* ФИКС ШРИФТА */
+    will-change: transform;
 }
 
-nav {
+/* ===== ОСНОВНОЙ КОНТЕНТ ===== */
+.main-content {
+    height: calc(800px - 70px - 60px);
     display: flex;
     align-items: center;
-    gap: 50px;
 }
 
-nav a {
-    color: #d0d0d0;
-    text-decoration: none;
-    font-size: 15px;
-    letter-spacing: 0.5px;
-    transition: color 0.2s ease;
+.container {
+    width: 100%;
 }
 
-nav a:hover {
-    color: #00ffc6;
-}
-
+/* ===== HERO ===== */
 .hero {
-    width: 100vw;
-    height: 480px;
-    background-color: #101010;
     text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.hero .container {
-    text-align: center;
+    margin-bottom: 60px;
+    /* ФИКС БЕЗ TRANSFORM */
+    will-change: transform;
 }
 
 .hero h1 {
-    font-size: 38px;
+    font-size: 32px;
     font-weight: 700;
     color: #ffffff;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+    /* ФИКС ШРИФТА */
+    will-change: transform;
 }
 
 .hero p {
-    font-size: 18px;
-    color: #bfbfbf;
-    width: 720px;
-    margin: 0 auto 40px auto;
-}
-
-.hero button {
-    background-color: #00ffc6;
-    color: #0d0d0d;
-    border: none;
-    padding: 14px 46px;
     font-size: 16px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    color: #bfbfbf;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.5;
+    /* ФИКС ШРИФТА */
+    will-change: transform;
 }
 
-.hero button:hover {
-    background-color: #00d9a7;
-}
-
+/* ===== SERVICES ===== */
 .services {
-    width: 100vw;
-    background-color: #141414;
-    padding: 100px 0;
-}
-
-.title-block {
     text-align: center;
+    /* ФИКС БЕЗ TRANSFORM */
+    will-change: transform;
 }
 
-.title-block h2 {
-    font-size: 26px;
+.services h2 {
+    font-size: 24px;
     font-weight: 600;
     color: #ffffff;
+    margin-bottom: 10px;
+    /* ФИКС ШРИФТА */
+    will-change: transform;
 }
 
 .underline {
-    width: 80px;
-    height: 3px;
+    width: 60px;
+    height: 2px;
     background-color: #00ffc6;
-    margin: 16px auto 60px auto;
+    margin: 0 auto 40px auto;
+    /* ФИКС ЛИНИИ */
+    will-change: transform;
 }
 
-.cards {
-    display: flex;
-    justify-content: space-between;
-}
-
-.card {
-    width: 420px;
-    background-color: #1a1a1a;
-    border: 1px solid #222;
-    padding: 50px 30px;
-    text-align: center;
-    transition: transform 0.3s ease, border-color 0.3s ease;
-}
-
-.card:hover {
-    transform: translateY(-4px);
-    border-color: #00ffc6;
-}
-
-.card h3 {
-    color: #00ffc6;
-    font-size: 18px;
-    margin-top: 24px;
-}
-
-.card p {
-    color: #bfbfbf;
-    font-size: 15px;
-    margin-top: 10px;
-}
-
-.about {
-    width: 100vw;
-    background-color: #101010;
-    padding: 120px 0;
-}
-
-.about .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.about .text {
-    width: 620px;
-}
-
-.about .text h2 {
-    font-size: 26px;
-    color: #00ffc6;
-    margin-bottom: 20px;
-}
-
-.about .text p {
-    font-size: 16px;
-    color: #c8c8c8;
-    line-height: 28px;
-}
-
-.about .image {
-    width: 400px;
-    height: 280px;
-    background-color: #111;
-    border: 1px solid #1f1f1f;
+.services-grid {
     display: flex;
     justify-content: center;
-    align-items: center;
+    gap: 40px;
 }
 
+.service-item {
+    flex: 1;
+    max-width: 300px;
+    padding: 30px 20px;
+    background-color: #1a1a1a;
+    border: 1px solid #222;
+    border-radius: 8px;
+    /* ФИКС БЛОКА */
+    will-change: transform;
+}
+
+.service-icon {
+    font-size: 40px;
+    margin-bottom: 20px;
+    height: 40px;
+    line-height: 1;
+    /* ФИКС ИКОНКИ */
+    will-change: transform;
+}
+
+.service-item h3 {
+    color: #00ffc6;
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-weight: 600;
+    /* ФИКС ШРИФТА */
+    will-change: transform;
+}
+
+.service-item p {
+    color: #bfbfbf;
+    font-size: 14px;
+    line-height: 1.4;
+    /* ФИКС ШРИФТА */
+    will-change: transform;
+}
+
+/* ===== FOOTER ===== */
 footer {
-    width: 100vw;
-    height: 120px;
+    width: 100%;
+    height: 60px;
     background-color: #0a0a0a;
     border-top: 1px solid #1a1a1a;
     text-align: center;
-    padding-top: 40px;
-    color: #777;
-    font-size: 14px;
-    line-height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 footer p {
     margin: 0;
+    color: #777;
+    font-size: 14px;
 }
